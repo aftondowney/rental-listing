@@ -16,5 +16,19 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+  }],
+
+  "announcements": [{
+    "message": "Storm Warning, Thunder, lightening and hail. Maybe a tornado...",
+    "date": "03/28/2016",
+    "subject": "weather"
+  }, {
+    "message": "Storm Sale! Take 10% off if you book during the Big Storm!",
+    "date": "03/28/2016",
+    "subject": "sale"
+  }, {
+    "message": "Warning: Creeper seen lurking!",
+    "date": "03/20/2016",
+    "type": "warning"
   }]
 }
