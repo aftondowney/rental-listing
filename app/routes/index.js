@@ -2,11 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return Ember.RSVP.hash({
-      rentals: this.store.findAll('rental'),
-      announcements: this.store.findAll('announcement')
-    });
-
+    return this.store.findAll('rental');
   },
 
   actions: {
@@ -15,11 +11,6 @@ export default Ember.Route.extend({
       newRental.save();
       this.transitionTo('index');
     },
-
-    update(rental, params){
-      rental.save();
-      this.transitionTo('index');
-    , 
 
     destroyRental(rental) {
       rental.destroyRecord();

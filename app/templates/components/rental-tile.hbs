@@ -2,7 +2,6 @@
     {{#if isImageShowing }}
        <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
      {{else}}
-     {{deugger}}
         <button {{action 'imageShow'}}>Show image</button>
     {{/if}}
         <button {{action 'delete' rental}}>Delete</button>
